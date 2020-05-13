@@ -53,7 +53,7 @@ module.exports = {
               //   }
               // },
               {
-                loader: 'babel-loader',
+                loader: 'babel-loader?cacheDirectory=true',// 开启缓存将转译结果缓存至文件系统
                 options: {
                   presets: [
                     [
