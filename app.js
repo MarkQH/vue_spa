@@ -27,6 +27,7 @@ new Vue({
   store,
   router: new VueRouter({
     mode: 'history',
+    base: '/one/',
     routes,
     scrollBehavior (to, from, savedPosition) {
       if (savedPosition) {

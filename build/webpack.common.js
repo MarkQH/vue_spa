@@ -17,7 +17,8 @@ const generateConfig = (isProd) => {
     entry: resolve(__dirname, '../app.js'),
     output: {
       filename: 'js/[name]_[hash:5].js',
-      path: resolve(__dirname, '../dist')
+      path: resolve(__dirname, '../dist'),
+      publicPath: '/one/'
     },
     module: {
       rules: [
